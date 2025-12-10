@@ -10,7 +10,7 @@ DB_HOST = os.getenv("DB_HOST")
 DB_USER = os.getenv("DB_USER")
 DB_PASSWORD = os.getenv("DB_PASSWORD")
 DB_PORT = os.getenv("DB_PORT")
-DB_NAME = "defaultdb" # Default nama DB di Aiven biasanya ini
+DB_NAME = "AQI" # Default nama DB di Aiven biasanya ini
 
 # Setting API OpenWeather (Ganti dengan API KEY ASLI Anda disini gapapa, atau pakai Secrets juga lebih bagus)
 API_KEY = "e3aef5cb30672427a9a263705ea84312"
@@ -67,4 +67,5 @@ def ambil_data():
         print(f"Error Database: {e}")
 
 if __name__ == "__main__":
+
     ambil_data()
